@@ -1,0 +1,120 @@
+<odoo>
+
+	  <record  id="view_erpish_skeleton_form"  model="ir.ui.view">  
+		<field  name="name">Expenses Category</field>  
+		<field  name="model">module.skeleton</field>  
+		<field  name="arch"  type="xml">  
+			<form duplicate="false" delete="false">  
+				<header>
+					 <button name="action_done" 
+						type="object"  string="Mark Done" 
+						id="toprint" class="oe_highlight"/>
+
+					 <button name="action_open_wiz" 
+						type="object"  string="Open Wiz" 
+						id="toprint" class="oe_highlight"/>
+											
+					 <field name="state" widget="statusbar" statusbar_visible="draft,done"/>
+                </header>
+				<sheet>
+
+					<div class="oe_button_box" name="button_box">    
+							
+							<button name="action_open_list_view"
+								class="oe_stat_button"
+								icon="fa-list"
+								type="object">
+								<field name="lines_count" widget="statinfo" string="Lines"/>
+							</button>
+													
+							<button name="action_get_attachment_view"
+								class="oe_stat_button"
+								icon="fa-book"
+								type="object">
+								<field name="attachment_number" widget="statinfo" string="Pièces Jointes"/>
+							</button>
+
+							<button name="toggle_active"  type="object" class="oe_stat_button" icon="fa-archive">
+								<field name="active" widget="boolean_button" options='{"terminology": "archive"}'/>
+							</button>
+
+					</div>
+
+				
+                    <field name="image_small" widget='image' class="oe_avatar" options='{"preview_image": "image_small", "size": [90, 90]}'/>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" default_focus="1" placeholder="Nom" />
+                        </h1>
+
+                    </div>
+						                        					
+                    <group>
+						<group> 
+							<field name="company_id" options="{'no_create': True}" invisible="1"/>
+						</group>
+						<group>
+							<field name="date" options="{'no_create': True}" />
+						</group>
+                    </group>				 
+                    
+                    <notebook>
+						
+						<page id="pg_lines" string="Data">
+							<field name="line_ids">
+								<tree editable="bottom">
+									<field name="name"/>
+								</tree>
+							</field>
+						</page>						
+					
+						<page id="pg_descirptyin" string="Description">
+							<field name="description" />
+						</page>						
+						
+                    </notebook>                   
+				</sheet>	
+				<div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>			
+			</form>  
+		</field>  
+	  </record>
+	  
+	  
+        <record id="view_erpish_skeleton_tree" model="ir.ui.view">
+            <field name="name">erpish.cahsier.exepnses.tree</field>
+            <field  name="model">module.skeleton</field>  
+            <field name="arch" type="xml">
+                <tree duplicate="false" delete="false">
+					<field name="name"/>
+					<field name="company_id" options="{'no_create': True}"/>
+                </tree>
+            </field>
+        </record>
+	  
+         <record id="view_skeleton_filter" model="ir.ui.view">
+            <field name="name">erpish.unite</field>
+            <field name="model">module.skeleton</field>
+            <field name="arch" type="xml">
+                <search string="Search Requests">
+                
+					<separator/>		
+					
+					<field name="name"/>
+					
+               </search>
+            </field>
+        </record>
+        
+        <record id="action_skeleton_docs" model="ir.actions.act_window">
+            <field name="name">Skeleton Docs</field>
+            <field name="res_model">module.skeleton</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>                   
+        </record>	         
+        	  
+</odoo>

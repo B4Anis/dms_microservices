@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_erpish_asset_1,a,model_module_skeleton,group_skeleton_user,1,1,1,1
+access_erpish_asset_2,a,model_module_skeleton_line,group_skeleton_user,1,1,1,1
+access_erpish_asset_3,a,model_module_skeleton_some_action_wiz,base.group_user,1,1,1,1

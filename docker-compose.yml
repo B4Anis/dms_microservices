@@ -1,0 +1,161 @@
+services:
+  kafka:
+    image: confluentinc/cp-kafka:7.6.0
+    ports:
+      - "9092:9092"
+      - "29092:29092"
+    environment:
+      KAFKA_NODE_ID: 1
+      KAFKA_PROCESS_ROLES: broker,controller
+      KAFKA_LISTENERS: PLAINTEXT://:29092,CONTROLLER://:9093,EXTERNAL://:9092
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:29092,EXTERNAL://localhost:9092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: CONTROLLER:PLAINTEXT,EXTERNAL:PLAINTEXT,PLAINTEXT:PLAINTEXT
+      KAFKA_CONTROLLER_QUORUM_VOTERS: 1@kafka:9093
+      KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      CLUSTER_ID: 'MkU3OEVBNTcwNTJENDM2Qk'
+
+  kafka-ui:
+    image: provectuslabs/kafka-ui:latest
+    depends_on:
+      - kafka
+    ports:
+      - "8082:8080"
+    environment:
+      KAFKA_CLUSTERS_0_NAME: local
+      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka:29092
+
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: dms
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+    ports:
+      - "5433:5432"
+    volumes:
+      - ./infra/postgres/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    command: redis-server --save 60 1 --loglevel warning
+
+  cassandra:
+    image: cassandra:4.1
+    environment:
+      CASSANDRA_CLUSTER_NAME: dms-cluster
+      CASSANDRA_DC: datacenter1
+      HEAP_NEWSIZE: 128M
+      MAX_HEAP_SIZE: 512M
+    ports:
+      - "9042:9042"
+    healthcheck:
+      test: [ "CMD", "cqlsh", "-e", "describe keyspaces" ]
+      interval: 30s
+      retries: 10
+
+  minio:
+    image: minio/minio
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    environment:
+      MINIO_ROOT_USER: admin
+      MINIO_ROOT_PASSWORD: password
+    command: server /data --console-address ":9001"
+
+  minio-init:
+    image: minio/mc
+    depends_on:
+      - minio
+    entrypoint: >
+      /bin/sh -c " /usr/bin/mc alias set localminio http://minio:9000 admin password; /usr/bin/mc mb localminio/dms-bucket --ignore-existing; /usr/bin/mc anonymous set download localminio/dms-bucket; exit 0; "
+
+  translator-service:
+    build: ./translator-service
+    depends_on:
+      - kafka
+      - minio
+    environment:
+      KAFKA_BROKER: kafka:29092
+      GEMINI_API_KEY: AIzaSyCa4T-kizepVZXhbCjSXTEpvWBvi43x5Sg
+
+  documents-service:
+    build: ./documents-service
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/dms
+      SPRING_DATASOURCE_USERNAME: admin
+      SPRING_DATASOURCE_PASSWORD: admin
+      SPRING_REDIS_HOST: redis
+      SPRING_REDIS_PORT: "6379"
+      SPRING_KAFKA_BOOTSTRAPSERVERS: kafka:29092
+      AWS_S3_ENDPOINT: http://minio:9000
+      AWS_S3_ACCESSKEY: admin
+      AWS_S3_SECRETKEY: password
+      AWS_S3_BUCKETNAME: dms-bucket
+      AWS_S3_REGION: us-east-1
+    depends_on:
+      - postgres
+      - redis
+      - kafka
+      - minio
+
+  comments-service:
+    build: ./comments-service
+    environment:
+      SPRING_DATA_CASSANDRA_CONTACTPOINTS: cassandra
+      SPRING_DATA_CASSANDRA_PORT: "9042"
+      SPRING_DATA_CASSANDRA_KEYSPACENAME: dms
+      SPRING_DATA_CASSANDRA_LOCALDATACENTER: datacenter1
+    depends_on:
+      cassandra:
+        condition: service_healthy
+
+  api-gateway:
+    build: ./api-gateway
+    ports:
+      - "8080:8080"
+    environment:
+      AUTH_SERVICE_URL: http://auth-service:8083
+      DOCUMENTS_SERVICE_URL: http://documents-service:8082
+      COMMENTS_SERVICE_URL: http://comments-service:8081
+    depends_on:
+      - auth-service
+      - documents-service
+      - comments-service
+
+  auth-service:
+    build: ./auth-service
+    ports:
+      - "8083:8083"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/dms
+      SPRING_DATASOURCE_USERNAME: admin
+      SPRING_DATASOURCE_PASSWORD: admin
+    depends_on:
+      - postgres
+
+  postgres-exporter:
+    image: prometheuscommunity/postgres-exporter:latest
+    ports:
+      - "9187:9187"
+    environment:
+      DATA_SOURCE_NAME: "postgresql://admin:admin@postgres:5432/dms?sslmode=disable"
+    depends_on:
+      - postgres
+
+  prometheus:
+    image: prom/prometheus:latest
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+
+  grafana:
+    image: grafana/grafana:latest
+    ports:
+      - "3000:3000"
+    environment:
+      GF_SECURITY_ADMIN_PASSWORD: admin

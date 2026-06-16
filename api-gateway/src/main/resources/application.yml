@@ -1,0 +1,38 @@
+server:
+  port: 8080
+
+spring:
+  cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins:
+              - "http://localhost:5173"
+              - "http://localhost:3000"
+              - "http://localhost:3001"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - PATCH
+              - DELETE
+              - OPTIONS
+            allowedHeaders: "*"
+            allowCredentials: true
+            maxAge: 3600
+      routes:
+        - id: auth-service
+          uri: ${AUTH_SERVICE_URL:http://localhost:8083}
+          predicates:
+            - Path=/auth/**
+
+        - id: documents-service
+          uri: ${DOCUMENTS_SERVICE_URL:http://localhost:8082}
+          predicates:
+            - Path=/api/documents/**
+
+        - id: comments-service
+          uri: ${COMMENTS_SERVICE_URL:http://localhost:8081}
+          predicates:
+            - Path=/api/comments/**

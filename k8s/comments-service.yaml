@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: comments-service
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: comments-service
+  template:
+    metadata:
+      labels:
+        app: comments-service
+    spec:
+      containers:
+      - name: comments-service
+        image: antigravityec-comments-service:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8081
+        env:
+        - name: SPRING_DATA_CASSANDRA_CONTACT_POINTS
+          value: "cassandra"
+        - name: SPRING_DATA_CASSANDRA_PORT
+          value: "9042"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: comments-service
+spec:
+  type: ClusterIP
+  ports:
+  - port: 8081
+  selector:
+    app: comments-service

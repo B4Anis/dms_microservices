@@ -1,0 +1,2485 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@dms.com",
+      "password": "admin123",
+      "firstName": "Admin",
+      "lastName": "User",
+      "role": "admin",
+      "departments": [
+        "1"
+      ],
+      "status": "active",
+      "avatar": null,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "lastActive": "2024-04-17T00:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "email": "user@dms.com",
+      "password": "user123",
+      "firstName": "John",
+      "lastName": "Doe",
+      "role": "user",
+      "departments": [
+        "1",
+        "2"
+      ],
+      "status": "active",
+      "avatar": null,
+      "createdAt": "2024-01-15T00:00:00.000Z",
+      "lastActive": "2024-04-17T00:00:00.000Z"
+    },
+    {
+      "id": "3",
+      "email": "alice.thomas3@dms.com",
+      "password": "password123",
+      "firstName": "Alice",
+      "lastName": "Thomas",
+      "role": "admin",
+      "departments": [
+        "2"
+      ],
+      "status": "active",
+      "avatar": null,
+      "createdAt": "2025-06-02T23:32:11.757Z",
+      "lastActive": "2026-03-30T23:32:11.758Z"
+    },
+    {
+      "id": "4",
+      "email": "sam.johnson4@dms.com",
+      "password": "password123",
+      "firstName": "Sam",
+      "lastName": "Johnson",
+      "role": "user",
+      "departments": [
+        "1"
+      ],
+      "status": "active",
+      "avatar": null,
+      "createdAt": "2025-05-30T23:32:11.758Z",
+      "lastActive": "2026-04-13T23:32:11.758Z"
+    },
+    {
+      "id": "5",
+      "email": "ivy.brown5@dms.com",
+      "password": "password123",
+      "firstName": "Ivy",
+      "lastName": "Brown",
+      "role": "user",
+      "departments": [
+        "2"
+      ],
+      "status": "active",
+      "avatar": null,
+      "createdAt": "2025-08-05T23:32:11.758Z",
+      "lastActive": "2026-03-26T23:32:11.758Z"
+    },
+    {
+      "id": "6",
+      "email": "alice.moore6@dms.com",
+      "password": "password123",
+      "firstName": "Alice",
+      "lastName": "Moore",
+      "role": "admin",
+      "departments": [
+        "1"
+      ],
+      "status": "active",
+      "avatar": null,
+      "createdAt": "2025-06-03T23:32:11.758Z",
+      "lastActive": "2026-04-03T23:32:11.758Z"
+    },
+    {
+      "id": "7",
+      "email": "frank.smith7@dms.com",
+      "password": "password123",
+      "firstName": "Frank",
+      "lastName": "Smith",
+      "role": "user",
+      "departments": [
+        "1"
+      ],
+      "status": "active",
+      "avatar": null,
+      "createdAt": "2024-09-23T23:32:11.758Z",
+      "lastActive": "2026-03-25T23:32:11.758Z"
+    },
+    {
+      "id": "8",
+      "email": "diana.smith8@dms.com",
+      "password": "password123",
+      "firstName": "Diana",
+      "lastName": "Smith",
+      "role": "admin",
+      "departments": [
+        "2"
+      ],
+      "status": "active",
+      "avatar": null,
+      "createdAt": "2024-09-25T23:32:11.758Z",
+      "lastActive": "2026-03-25T23:32:11.758Z"
+    },
+    {
+      "id": "9",
+      "email": "karen.jackson9@dms.com",
+      "password": "password123",
+      "firstName": "Karen",
+      "lastName": "Jackson",
+      "role": "user",
+      "departments": [
+        "1"
+      ],
+      "status": "active",
+      "avatar": null,
+      "createdAt": "2025-03-04T23:32:11.758Z",
+      "lastActive": "2026-04-17T23:32:11.758Z"
+    },
+    {
+      "id": "10",
+      "email": "olivia.smith10@dms.com",
+      "password": "password123",
+      "firstName": "Olivia",
+      "lastName": "Smith",
+      "role": "user",
+      "departments": [
+        "1"
+      ],
+      "status": "active",
+      "avatar": null,
+      "createdAt": "2025-10-27T23:32:11.758Z",
+      "lastActive": "2026-03-25T23:32:11.758Z"
+    },
+    {
+      "id": "11",
+      "email": "mia.williams11@dms.com",
+      "password": "password123",
+      "firstName": "Mia",
+      "lastName": "Williams",
+      "role": "user",
+      "departments": [
+        "1"
+      ],
+      "status": "active",
+      "avatar": null,
+      "createdAt": "2025-11-18T23:32:11.758Z",
+      "lastActive": "2026-03-20T23:32:11.758Z"
+    },
+    {
+      "id": "12",
+      "email": "sam.smith12@dms.com",
+      "password": "password123",
+      "firstName": "Sam",
+      "lastName": "Smith",
+      "role": "user",
+      "departments": [
+        "1"
+      ],
+      "status": "active",
+      "avatar": null,
+      "createdAt": "2026-01-02T23:32:11.758Z",
+      "lastActive": "2026-04-03T23:32:11.758Z"
+    },
+    {
+      "id": "13",
+      "email": "sam.miller13@dms.com",
+      "password": "password123",
+      "firstName": "Sam",
+      "lastName": "Miller",
+      "role": "user",
+      "departments": [
+        "2"
+      ],
+      "status": "active",
+      "avatar": null,
+      "createdAt": "2025-03-19T23:32:11.758Z",
+      "lastActive": "2026-04-13T23:32:11.758Z"
+    },
+    {
+      "id": "14",
+      "email": "ivy.jackson14@dms.com",
+      "password": "password123",
+      "firstName": "Ivy",
+      "lastName": "Jackson",
+      "role": "admin",
+      "departments": [
+        "2"
+      ],
+      "status": "active",
+      "avatar": null,
+      "createdAt": "2025-08-10T23:32:11.758Z",
+      "lastActive": "2026-03-30T23:32:11.758Z"
+    },
+    {
+      "id": "15",
+      "email": "noah.miller15@dms.com",
+      "password": "password123",
+      "firstName": "Noah",
+      "lastName": "Miller",
+      "role": "admin",
+      "departments": [
+        "1"
+      ],
+      "status": "active",
+      "avatar": null,
+      "createdAt": "2024-08-06T23:32:11.759Z",
+      "lastActive": "2026-03-21T23:32:11.759Z"
+    },
+    {
+      "id": "16",
+      "email": "henry.davis16@dms.com",
+      "password": "password123",
+      "firstName": "Henry",
+      "lastName": "Davis",
+      "role": "user",
+      "departments": [
+        "2"
+      ],
+      "status": "active",
+      "avatar": null,
+      "createdAt": "2025-11-14T23:32:11.759Z",
+      "lastActive": "2026-04-03T23:32:11.759Z"
+    },
+    {
+      "id": "17",
+      "email": "tina.jackson17@dms.com",
+      "password": "password123",
+      "firstName": "Tina",
+      "lastName": "Jackson",
+      "role": "user",
+      "departments": [
+        "1"
+      ],
+      "status": "active",
+      "avatar": null,
+      "createdAt": "2024-08-26T23:32:11.759Z",
+      "lastActive": "2026-04-08T23:32:11.759Z"
+    },
+    {
+      "id": "18",
+      "email": "olivia.taylor18@dms.com",
+      "password": "password123",
+      "firstName": "Olivia",
+      "lastName": "Taylor",
+      "role": "user",
+      "departments": [
+        "2"
+      ],
+      "status": "active",
+      "avatar": null,
+      "createdAt": "2025-04-22T23:32:11.759Z",
+      "lastActive": "2026-04-13T23:32:11.759Z"
+    },
+    {
+      "id": "19",
+      "email": "quinn.davis19@dms.com",
+      "password": "password123",
+      "firstName": "Quinn",
+      "lastName": "Davis",
+      "role": "user",
+      "departments": [
+        "2"
+      ],
+      "status": "suspended",
+      "avatar": null,
+      "createdAt": "2026-02-01T23:32:11.759Z",
+      "lastActive": "2026-04-03T23:32:11.759Z"
+    },
+    {
+      "id": "20",
+      "email": "ivy.davis20@dms.com",
+      "password": "password123",
+      "firstName": "Ivy",
+      "lastName": "Davis",
+      "role": "user",
+      "departments": [
+        "2"
+      ],
+      "status": "active",
+      "avatar": null,
+      "createdAt": "2025-11-11T23:32:11.759Z",
+      "lastActive": "2026-03-29T23:32:11.759Z"
+    },
+    {
+      "id": "21",
+      "email": "eve.smith21@dms.com",
+      "password": "password123",
+      "firstName": "Eve",
+      "lastName": "Smith",
+      "role": "user",
+      "departments": [
+        "1"
+      ],
+      "status": "active",
+      "avatar": null,
+      "createdAt": "2024-12-09T23:32:11.759Z",
+      "lastActive": "2026-03-27T23:32:11.759Z"
+    },
+    {
+      "id": "22",
+      "email": "jack.martin22@dms.com",
+      "password": "password123",
+      "firstName": "Jack",
+      "lastName": "Martin",
+      "role": "admin",
+      "departments": [
+        "1"
+      ],
+      "status": "active",
+      "avatar": null,
+      "createdAt": "2025-11-13T23:32:11.759Z",
+      "lastActive": "2026-03-26T23:32:11.759Z"
+    },
+    {
+      "id": "23",
+      "email": "noah.johnson23@dms.com",
+      "password": "password123",
+      "firstName": "Noah",
+      "lastName": "Johnson",
+      "role": "user",
+      "departments": [
+        "1"
+      ],
+      "status": "active",
+      "avatar": null,
+      "createdAt": "2026-01-01T23:32:11.759Z",
+      "lastActive": "2026-03-25T23:32:11.759Z"
+    },
+    {
+      "id": "24",
+      "email": "henry.martin24@dms.com",
+      "password": "password123",
+      "firstName": "Henry",
+      "lastName": "Martin",
+      "role": "admin",
+      "departments": [
+        "2"
+      ],
+      "status": "active",
+      "avatar": null,
+      "createdAt": "2025-09-02T23:32:11.759Z",
+      "lastActive": "2026-03-21T23:32:11.759Z"
+    },
+    {
+      "id": "25",
+      "email": "noah.miller25@dms.com",
+      "password": "password123",
+      "firstName": "Noah",
+      "lastName": "Miller",
+      "role": "admin",
+      "departments": [
+        "2"
+      ],
+      "status": "active",
+      "avatar": null,
+      "createdAt": "2025-09-27T23:32:11.759Z",
+      "lastActive": "2026-04-04T23:32:11.759Z"
+    },
+    {
+      "id": "26",
+      "email": "grace.moore26@dms.com",
+      "password": "password123",
+      "firstName": "Grace",
+      "lastName": "Moore",
+      "role": "admin",
+      "departments": [
+        "1"
+      ],
+      "status": "active",
+      "avatar": null,
+      "createdAt": "2025-03-25T23:32:11.759Z",
+      "lastActive": "2026-03-25T23:32:11.759Z"
+    },
+    {
+      "id": "27",
+      "email": "alice.jackson27@dms.com",
+      "password": "password123",
+      "firstName": "Alice",
+      "lastName": "Jackson",
+      "role": "user",
+      "departments": [
+        "1"
+      ],
+      "status": "active",
+      "avatar": null,
+      "createdAt": "2025-08-14T23:32:11.759Z",
+      "lastActive": "2026-03-23T23:32:11.759Z"
+    },
+    {
+      "id": "28",
+      "email": "ivy.jones28@dms.com",
+      "password": "password123",
+      "firstName": "Ivy",
+      "lastName": "Jones",
+      "role": "user",
+      "departments": [
+        "2"
+      ],
+      "status": "active",
+      "avatar": null,
+      "createdAt": "2026-03-22T23:32:11.759Z",
+      "lastActive": "2026-04-13T23:32:11.759Z"
+    },
+    {
+      "id": "29",
+      "email": "karen.smith29@dms.com",
+      "password": "password123",
+      "firstName": "Karen",
+      "lastName": "Smith",
+      "role": "user",
+      "departments": [
+        "1"
+      ],
+      "status": "active",
+      "avatar": null,
+      "createdAt": "2024-06-08T23:32:11.759Z",
+      "lastActive": "2026-03-31T23:32:11.759Z"
+    },
+    {
+      "id": "30",
+      "email": "charlie.brown30@dms.com",
+      "password": "password123",
+      "firstName": "Charlie",
+      "lastName": "Brown",
+      "role": "user",
+      "departments": [
+        "2"
+      ],
+      "status": "active",
+      "avatar": null,
+      "createdAt": "2025-06-05T23:32:11.759Z",
+      "lastActive": "2026-03-24T23:32:11.759Z"
+    },
+    {
+      "id": "31",
+      "email": "alice.thomas31@dms.com",
+      "password": "password123",
+      "firstName": "Alice",
+      "lastName": "Thomas",
+      "role": "user",
+      "departments": [
+        "2"
+      ],
+      "status": "active",
+      "avatar": null,
+      "createdAt": "2025-10-23T23:32:11.759Z",
+      "lastActive": "2026-03-24T23:32:11.759Z"
+    },
+    {
+      "id": "32",
+      "email": "olivia.brown32@dms.com",
+      "password": "password123",
+      "firstName": "Olivia",
+      "lastName": "Brown",
+      "role": "admin",
+      "departments": [
+        "2"
+      ],
+      "status": "active",
+      "avatar": null,
+      "createdAt": "2026-03-03T23:32:11.759Z",
+      "lastActive": "2026-04-08T23:32:11.759Z"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "UserE2E",
+      "email": "e2e-test-1776476147734@example.com",
+      "role": "user",
+      "status": "active",
+      "departments": [],
+      "password": "Password123!",
+      "id": "k9z7JhkugV4",
+      "createdAt": "2026-04-18T01:35:54.693Z",
+      "lastActive": "2026-04-18T01:35:54.695Z"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "UserE2E",
+      "email": "e2e-test-1776476167360@example.com",
+      "role": "user",
+      "status": "active",
+      "departments": [],
+      "password": "Password123!",
+      "id": "vqXN9BazrvY",
+      "createdAt": "2026-04-18T01:36:09.081Z",
+      "lastActive": "2026-04-18T01:36:09.081Z"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "UserE2E",
+      "email": "e2e-test-1776476200933@example.com",
+      "role": "user",
+      "status": "active",
+      "departments": [],
+      "password": "Password123!",
+      "id": "5s8Q_Twk-JY",
+      "createdAt": "2026-04-18T01:36:47.292Z",
+      "lastActive": "2026-04-18T01:36:47.292Z"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "UserE2E",
+      "email": "e2e-test-1776476218990@example.com",
+      "role": "user",
+      "status": "active",
+      "departments": [],
+      "password": "Password123!",
+      "id": "9MIpNaUqeP8",
+      "createdAt": "2026-04-18T01:37:00.767Z",
+      "lastActive": "2026-04-18T01:37:00.768Z"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "UserE2E",
+      "email": "e2e-test-1776476261660@example.com",
+      "role": "user",
+      "status": "active",
+      "departments": [],
+      "password": "Password123!",
+      "id": "cGedUgBtYd4",
+      "createdAt": "2026-04-18T01:37:48.239Z",
+      "lastActive": "2026-04-18T01:37:48.239Z"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "UserE2E",
+      "email": "e2e-test-1776476280002@example.com",
+      "role": "user",
+      "status": "active",
+      "departments": [],
+      "password": "Password123!",
+      "id": "rr4nDpggNEM",
+      "createdAt": "2026-04-18T01:38:02.391Z",
+      "lastActive": "2026-04-18T01:38:02.391Z"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "UserE2E",
+      "email": "e2e-test-1776476303174@example.com",
+      "role": "user",
+      "status": "active",
+      "departments": [],
+      "password": "Password123!",
+      "id": "eeRIqaoV8WE",
+      "createdAt": "2026-04-18T01:38:24.753Z",
+      "lastActive": "2026-04-18T01:38:24.753Z"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "UserE2E",
+      "email": "e2e-test-1776476317698@example.com",
+      "role": "user",
+      "status": "active",
+      "departments": [],
+      "password": "Password123!",
+      "id": "tGmvDQRT2mc",
+      "createdAt": "2026-04-18T01:38:39.459Z",
+      "lastActive": "2026-04-18T01:38:39.459Z"
+    },
+    {
+      "firstName": "E2E",
+      "lastName": "Tester",
+      "email": "e2e.tester.new@example.com",
+      "role": "user",
+      "status": "suspended",
+      "departments": [],
+      "password": "password123",
+      "id": "I6uQhc1FBeU",
+      "createdAt": "2026-04-18T01:40:43.365Z",
+      "lastActive": "2026-04-18T01:40:43.365Z"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "UserE2E",
+      "email": "e2e-test-1776478711665@example.com",
+      "role": "user",
+      "status": "active",
+      "departments": [],
+      "password": "Password123!",
+      "id": "3vQKFsPd4rc",
+      "createdAt": "2026-04-18T02:18:40.294Z",
+      "lastActive": "2026-04-18T02:18:40.295Z"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "UserE2E",
+      "email": "e2e-test-1776478732980@example.com",
+      "role": "user",
+      "status": "active",
+      "departments": [],
+      "password": "Password123!",
+      "id": "5rWmXB7Cn-0",
+      "createdAt": "2026-04-18T02:18:54.770Z",
+      "lastActive": "2026-04-18T02:18:54.771Z"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "UserE2E",
+      "email": "e2e-test-1776478824006@example.com",
+      "role": "user",
+      "status": "active",
+      "departments": [],
+      "password": "Password123!",
+      "id": "6Y-Fw5SW1So",
+      "createdAt": "2026-04-18T02:20:25.376Z",
+      "lastActive": "2026-04-18T02:20:25.376Z"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "UserE2E",
+      "email": "e2e-test-1776478836733@example.com",
+      "role": "user",
+      "status": "active",
+      "departments": [],
+      "password": "Password123!",
+      "id": "_D5FWTUoucA",
+      "createdAt": "2026-04-18T02:20:38.295Z",
+      "lastActive": "2026-04-18T02:20:38.295Z"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "UserE2E",
+      "email": "e2e-test-1776479062745@example.com",
+      "role": "user",
+      "status": "active",
+      "departments": [],
+      "password": "Password123!",
+      "id": "s_FNeWAQfHU",
+      "createdAt": "2026-04-18T02:24:29.515Z",
+      "lastActive": "2026-04-18T02:24:29.516Z"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "UserE2E",
+      "email": "e2e-test-1776479122985@example.com",
+      "role": "user",
+      "status": "active",
+      "departments": [],
+      "password": "Password123!",
+      "id": "E6_Q8U3UAMg",
+      "createdAt": "2026-04-18T02:25:29.325Z",
+      "lastActive": "2026-04-18T02:25:29.326Z"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "UserE2E",
+      "email": "e2e-test-1776479353025@example.com",
+      "role": "user",
+      "status": "active",
+      "departments": [],
+      "password": "Password123!",
+      "id": "O28AH0hyN18",
+      "createdAt": "2026-04-18T02:29:18.783Z",
+      "lastActive": "2026-04-18T02:29:18.783Z"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "UserE2E",
+      "email": "e2e-test-1776479375148@example.com",
+      "role": "user",
+      "status": "active",
+      "departments": [],
+      "password": "Password123!",
+      "id": "xl9ZzPglRGE",
+      "createdAt": "2026-04-18T02:29:36.823Z",
+      "lastActive": "2026-04-18T02:29:36.823Z"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "UserE2E",
+      "email": "e2e-test-1776479542988@example.com",
+      "role": "user",
+      "status": "active",
+      "departments": [],
+      "password": "Password123!",
+      "id": "3IP8soIaU2k",
+      "createdAt": "2026-04-18T02:32:24.394Z",
+      "lastActive": "2026-04-18T02:32:24.395Z"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "UserE2E",
+      "email": "e2e-test-1776479560759@example.com",
+      "role": "user",
+      "status": "active",
+      "departments": [
+        "9SPZPftdycA"
+      ],
+      "password": "Password123!",
+      "id": "TgoTpVZgX9s",
+      "createdAt": "2026-04-18T02:32:42.381Z",
+      "lastActive": "2026-04-18T02:32:42.381Z"
+    },
+    {
+      "firstName": "Alice",
+      "lastName": "IT",
+      "email": "u1@ensia.dz",
+      "role": "user",
+      "status": "active",
+      "departments": [
+        "hPyGgv-T_gs"
+      ],
+      "password": "Password1!",
+      "id": "Fx5tT0VwFZE",
+      "createdAt": "2026-05-14T01:15:13.180Z",
+      "lastActive": "2026-05-14T01:15:13.180Z"
+    },
+    {
+      "firstName": "Bob",
+      "lastName": "Finance",
+      "email": "u2@ensia.dz",
+      "role": "user",
+      "status": "active",
+      "departments": [
+        "oj8t1OUoeTk"
+      ],
+      "password": "Password1!",
+      "id": "EgHsGn-FKXw",
+      "createdAt": "2026-05-14T01:15:31.915Z",
+      "lastActive": "2026-05-14T01:15:31.915Z"
+    },
+    {
+      "firstName": "Carol",
+      "lastName": "Both",
+      "email": "u3@ensia.dz",
+      "role": "user",
+      "status": "active",
+      "departments": [
+        "hPyGgv-T_gs",
+        "oj8t1OUoeTk"
+      ],
+      "password": "Password1!",
+      "id": "RH28t7FIV7E",
+      "createdAt": "2026-05-14T01:15:51.875Z",
+      "lastActive": "2026-05-14T01:15:51.875Z"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "UserE2E",
+      "email": "e2e-test-1779183617604@example.com",
+      "role": "user",
+      "status": "active",
+      "departments": [],
+      "password": "Password123!",
+      "id": "GXZB4yFdstM",
+      "createdAt": "2026-05-19T09:40:30.979Z",
+      "lastActive": "2026-05-19T09:40:30.979Z"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "UserE2E",
+      "email": "e2e-test-1779183649036@example.com",
+      "role": "user",
+      "status": "active",
+      "departments": [],
+      "password": "Password123!",
+      "id": "ah7Y9LuOVMw",
+      "createdAt": "2026-05-19T09:40:51.893Z",
+      "lastActive": "2026-05-19T09:40:51.893Z"
+    }
+  ],
+  "departments": [
+    {
+      "id": "1",
+      "name": "Engineering",
+      "description": "Engineering Department",
+      "managerId": "1",
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "name": "Human Resources",
+      "description": "HR Department",
+      "managerId": "2",
+      "createdAt": "2024-01-10T00:00:00.000Z"
+    },
+    {
+      "name": "kg,h",
+      "description": "vm",
+      "managerId": "13",
+      "color": "#3B82F6",
+      "icon": "🏢",
+      "id": "vI3RK2fiC84",
+      "createdAt": "2026-04-30T04:43:18.153Z"
+    },
+    {
+      "name": "Finance",
+      "description": "",
+      "managerId": "",
+      "color": "#3B82F6",
+      "icon": "🏢",
+      "id": "oj8t1OUoeTk",
+      "createdAt": "2026-05-14T01:14:57.691Z"
+    },
+    {
+      "name": "IT",
+      "description": "",
+      "managerId": "",
+      "color": "#3B82F6",
+      "icon": "🏢",
+      "id": "hPyGgv-T_gs",
+      "createdAt": "2026-05-14T01:15:01.051Z"
+    },
+    {
+      "name": "pin",
+      "description": "sf",
+      "managerId": "14",
+      "color": "#3B82F6",
+      "icon": "🏢",
+      "id": "9SPZPftdycA",
+      "createdAt": "2026-05-19T09:22:09.525Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Reports",
+      "description": "Company reports and analytics",
+      "parentId": null,
+      "icon": "📊",
+      "color": "#3B82F6",
+      "order": 1,
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "name": "Financial Reports",
+      "description": "Quarterly and annual financial summaries",
+      "parentId": "1",
+      "icon": "💰",
+      "color": "#10B981",
+      "order": 1,
+      "createdAt": "2024-01-02T00:00:00.000Z"
+    },
+    {
+      "id": "3",
+      "name": "Audit Reports",
+      "description": "Internal and external audit findings",
+      "parentId": "1",
+      "icon": "🔍",
+      "color": "#F59E0B",
+      "order": 2,
+      "createdAt": "2024-01-03T00:00:00.000Z"
+    },
+    {
+      "id": "4",
+      "name": "Policies",
+      "description": "Company-wide policies and guidelines",
+      "parentId": null,
+      "icon": "📋",
+      "color": "#8B5CF6",
+      "order": 2,
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "5",
+      "name": "HR Policies",
+      "description": "Human Resources policies and procedures",
+      "parentId": "4",
+      "icon": "👥",
+      "color": "#EC4899",
+      "order": 1,
+      "createdAt": "2024-01-04T00:00:00.000Z"
+    },
+    {
+      "id": "6",
+      "name": "IT Policies",
+      "description": "Information Technology policies and security guidelines",
+      "parentId": "4",
+      "icon": "🔒",
+      "color": "#6366F1",
+      "order": 2,
+      "createdAt": "2024-01-05T00:00:00.000Z"
+    },
+    {
+      "id": "7",
+      "name": "Projects",
+      "description": "Project documentation and plans",
+      "parentId": null,
+      "icon": "🗂️",
+      "color": "#EF4444",
+      "order": 3,
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "8",
+      "name": "Meeting Notes",
+      "description": "Minutes and notes from team meetings",
+      "parentId": null,
+      "icon": "📝",
+      "color": "#14B8A6",
+      "order": 4,
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "9",
+      "name": "Templates",
+      "description": "Reusable document templates",
+      "parentId": null,
+      "icon": "📄",
+      "color": "#F97316",
+      "order": 5,
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "name": "General",
+      "description": "",
+      "parentId": null,
+      "icon": "📁",
+      "color": "#3B82F6",
+      "order": 6,
+      "id": "rmFA1tLgP3A",
+      "createdAt": "2026-05-14T01:16:04.552Z"
+    },
+    {
+      "name": "Administrative",
+      "description": "",
+      "parentId": null,
+      "icon": "📁",
+      "color": "#3B82F6",
+      "order": 7,
+      "id": "aO1-tS2r5ys",
+      "createdAt": "2026-05-14T01:16:15.874Z"
+    },
+    {
+      "name": "Training",
+      "description": "",
+      "parentId": null,
+      "icon": "📁",
+      "color": "#3B82F6",
+      "order": 8,
+      "id": "VqQ06vG1ZMY",
+      "createdAt": "2026-05-14T01:16:27.123Z"
+    }
+  ],
+  "documents": [
+    {
+      "id": "1",
+      "title": "Q1 Financial Report",
+      "description": "Financial summary for Q1 2024.",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [
+        "finance",
+        "q1",
+        "2024"
+      ],
+      "fileUrl": "/uploads/q1-report.pdf",
+      "fileName": "q1-report.pdf",
+      "fileType": "PDF",
+      "fileSize": 1048576,
+      "status": "published",
+      "uploadedBy": "1",
+      "currentVersion": 1,
+      "createdAt": "2024-04-01T10:00:00.000Z",
+      "updatedAt": "2024-04-01T10:00:00.000Z",
+      "viewCount": 50,
+      "downloadCount": 12
+    },
+    {
+      "id": "2",
+      "title": "Employee Handbook 2024",
+      "description": "Updated employee handbook.",
+      "categoryId": "2",
+      "departmentId": "2",
+      "tags": [
+        "hr",
+        "policy",
+        "handbook"
+      ],
+      "fileUrl": "/uploads/handbook.pdf",
+      "fileName": "handbook.pdf",
+      "fileType": "PDF",
+      "fileSize": 3145728,
+      "status": "published",
+      "uploadedBy": "2",
+      "currentVersion": 2,
+      "createdAt": "2024-03-15T14:30:00.000Z",
+      "updatedAt": "2024-03-20T10:00:00.000Z",
+      "viewCount": 151,
+      "downloadCount": 89
+    },
+    {
+      "id": "3",
+      "title": "Frontend Architecture",
+      "description": "React architecture proposal.",
+      "categoryId": "3",
+      "departmentId": "1",
+      "tags": [
+        "react",
+        "architecture",
+        "frontend"
+      ],
+      "fileUrl": "/uploads/architecture.docx",
+      "fileName": "architecture.docx",
+      "fileType": "DOCX",
+      "fileSize": 512000,
+      "status": "published",
+      "uploadedBy": "1",
+      "currentVersion": 1,
+      "createdAt": "2024-04-10T09:15:00.000Z",
+      "updatedAt": "2024-04-10T09:15:00.000Z",
+      "viewCount": 23,
+      "downloadCount": 5
+    },
+    {
+      "id": "4",
+      "title": "Logo Assets",
+      "description": "High-res logo files.",
+      "categoryId": "3",
+      "departmentId": "1",
+      "tags": [
+        "logo",
+        "branding",
+        "assets"
+      ],
+      "fileUrl": "/uploads/logos.png",
+      "fileName": "logos.png",
+      "fileType": "PNG",
+      "fileSize": 2048576,
+      "status": "published",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "createdAt": "2024-02-28T16:45:00.000Z",
+      "updatedAt": "2024-02-28T16:45:00.000Z",
+      "viewCount": 78,
+      "downloadCount": 45
+    },
+    {
+      "id": "5",
+      "title": "Annual Leave Policy",
+      "description": "Guidelines for taking PTO.",
+      "categoryId": "2",
+      "departmentId": "2",
+      "tags": [
+        "hr",
+        "pto",
+        "leave"
+      ],
+      "fileUrl": "/uploads/leave-policy.pdf",
+      "fileName": "leave-policy.pdf",
+      "fileType": "PDF",
+      "fileSize": 256000,
+      "status": "published",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "createdAt": "2024-01-20T11:00:00.000Z",
+      "updatedAt": "2024-01-20T11:00:00.000Z",
+      "viewCount": 210,
+      "downloadCount": 105
+    },
+    {
+      "id": "6",
+      "title": "API Specifications v2",
+      "description": "REST API docs for mobile app.",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [
+        "api",
+        "backend",
+        "docs"
+      ],
+      "fileUrl": "/uploads/api-specs.docx",
+      "fileName": "api-specs.docx",
+      "fileType": "DOCX",
+      "fileSize": 450000,
+      "status": "draft",
+      "uploadedBy": "1",
+      "currentVersion": 1,
+      "createdAt": "2024-04-16T15:20:00.000Z",
+      "updatedAt": "2024-04-16T15:20:00.000Z",
+      "viewCount": 5,
+      "downloadCount": 1
+    },
+    {
+      "id": "7",
+      "title": "Marketing Campaign Stats",
+      "description": "April marketing performance.",
+      "categoryId": "1",
+      "departmentId": "2",
+      "tags": [
+        "marketing",
+        "stats",
+        "april"
+      ],
+      "fileUrl": "/uploads/marketing-stats.xlsx",
+      "fileName": "marketing-stats.xlsx",
+      "fileType": "XLSX",
+      "fileSize": 1500000,
+      "status": "published",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "createdAt": "2024-04-12T08:30:00.000Z",
+      "updatedAt": "2024-04-12T08:30:00.000Z",
+      "viewCount": 34,
+      "downloadCount": 12
+    },
+    {
+      "id": "8",
+      "title": "Onboarding Checklist",
+      "description": "New hire onboarding steps.",
+      "categoryId": "2",
+      "departmentId": "2",
+      "tags": [
+        "hr",
+        "onboarding",
+        "new-hire"
+      ],
+      "fileUrl": "/uploads/onboarding.pdf",
+      "fileName": "onboarding.pdf",
+      "fileType": "PDF",
+      "fileSize": 120000,
+      "status": "published",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "createdAt": "2024-02-10T09:00:00.000Z",
+      "updatedAt": "2024-02-10T09:00:00.000Z",
+      "viewCount": 89,
+      "downloadCount": 42
+    },
+    {
+      "id": "9",
+      "title": "UI Mockups - Dashboard",
+      "description": "Figma exports for main dashboard.",
+      "categoryId": "3",
+      "departmentId": "1",
+      "tags": [
+        "ui",
+        "mockup",
+        "dashboard"
+      ],
+      "fileUrl": "/uploads/dashboard-ui.jpg",
+      "fileName": "dashboard-ui.jpg",
+      "fileType": "JPG",
+      "fileSize": 3500000,
+      "status": "published",
+      "uploadedBy": "1",
+      "currentVersion": 2,
+      "createdAt": "2024-03-05T13:15:00.000Z",
+      "updatedAt": "2024-03-10T11:20:00.000Z",
+      "viewCount": 67,
+      "downloadCount": 30
+    },
+    {
+      "id": "10",
+      "title": "Server Migration Plan",
+      "description": "AWS migration strategy.",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [
+        "aws",
+        "infrastructure",
+        "devops"
+      ],
+      "fileUrl": "/uploads/migration-plan.docx",
+      "fileName": "migration-plan.docx",
+      "fileType": "DOCX",
+      "fileSize": 890000,
+      "status": "published",
+      "uploadedBy": "1",
+      "currentVersion": 1,
+      "createdAt": "2024-01-25T14:00:00.000Z",
+      "updatedAt": "2024-01-25T14:00:00.000Z",
+      "viewCount": 45,
+      "downloadCount": 18
+    },
+    {
+      "id": "11",
+      "title": "Q2 Budget Projection",
+      "description": "Estimated budget for next quarter.",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [
+        "finance",
+        "budget",
+        "q2"
+      ],
+      "fileUrl": "/uploads/q2-budget.xlsx",
+      "fileName": "q2-budget.xlsx",
+      "fileType": "XLSX",
+      "fileSize": 1250000,
+      "status": "draft",
+      "uploadedBy": "1",
+      "currentVersion": 1,
+      "createdAt": "2024-04-17T09:00:00.000Z",
+      "updatedAt": "2024-04-17T09:00:00.000Z",
+      "viewCount": 5022,
+      "downloadCount": 0
+    },
+    {
+      "id": "12",
+      "title": "Remote Work Guidelines",
+      "description": "WFH policy updates.",
+      "categoryId": "2",
+      "departmentId": "2",
+      "tags": [
+        "hr",
+        "wfh",
+        "remote"
+      ],
+      "fileUrl": "/uploads/remote-work.pdf",
+      "fileName": "remote-work.pdf",
+      "fileType": "PDF",
+      "fileSize": 450000,
+      "status": "published",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "createdAt": "2024-03-01T10:30:00.000Z",
+      "updatedAt": "2024-03-01T10:30:00.000Z",
+      "viewCount": 134,
+      "downloadCount": 67
+    },
+    {
+      "id": "13",
+      "title": "Brand Guidelines",
+      "description": "Color palette and typography.",
+      "categoryId": "3",
+      "departmentId": "1",
+      "tags": [
+        "brand",
+        "design",
+        "colors"
+      ],
+      "fileUrl": "/uploads/brand-guidelines.pdf",
+      "fileName": "brand-guidelines.pdf",
+      "fileType": "PDF",
+      "fileSize": 5600000,
+      "status": "published",
+      "uploadedBy": "1",
+      "currentVersion": 1,
+      "createdAt": "2024-02-15T11:45:00.000Z",
+      "updatedAt": "2024-02-15T11:45:00.000Z",
+      "viewCount": 92,
+      "downloadCount": 55
+    },
+    {
+      "id": "14",
+      "title": "Meeting Notes - 04/15",
+      "description": "Weekly sync notes.",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [
+        "notes",
+        "meeting",
+        "weekly"
+      ],
+      "fileUrl": "/uploads/notes-0415.txt",
+      "fileName": "notes-0415.txt",
+      "fileType": "TXT",
+      "fileSize": 15000,
+      "status": "published",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "createdAt": "2024-04-15T16:00:00.000Z",
+      "updatedAt": "2024-04-15T16:00:00.000Z",
+      "viewCount": 12,
+      "downloadCount": 2
+    },
+    {
+      "id": "15",
+      "title": "Security Audit Report",
+      "description": "Annual security review findings.",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [
+        "security",
+        "audit",
+        "compliance"
+      ],
+      "fileUrl": "/uploads/security-audit.pdf",
+      "fileName": "security-audit.pdf",
+      "fileType": "PDF",
+      "fileSize": 2800000,
+      "status": "published",
+      "uploadedBy": "1",
+      "currentVersion": 1,
+      "createdAt": "2024-03-25T09:30:00.000Z",
+      "updatedAt": "2024-03-25T09:30:00.000Z",
+      "viewCount": 28,
+      "downloadCount": 14
+    },
+    {
+      "id": "wIaVCCK2_9c",
+      "title": "Test Document E2E",
+      "description": "This is a test document created by E2E tests",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [],
+      "fileUrl": "/uploads/e2e-test-file.pdf",
+      "fileName": "e2e-test-file.pdf",
+      "fileType": "pdf",
+      "fileSize": 25,
+      "status": "draft",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/e2e-test-file.pdf",
+          "uploadedBy": "2",
+          "uploadedAt": "2026-04-18T01:36:44.251Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-04-18T01:36:44.252Z",
+      "updatedAt": "2026-04-18T01:36:44.252Z",
+      "viewCount": 0,
+      "downloadCount": 0
+    },
+    {
+      "id": "mIzR22UR41Q",
+      "title": "Test Document E2E",
+      "description": "This is a test document created by E2E tests",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [],
+      "fileUrl": "/uploads/e2e-test-file.pdf",
+      "fileName": "e2e-test-file.pdf",
+      "fileType": "pdf",
+      "fileSize": 25,
+      "status": "draft",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/e2e-test-file.pdf",
+          "uploadedBy": "2",
+          "uploadedAt": "2026-04-18T01:36:57.027Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-04-18T01:36:57.027Z",
+      "updatedAt": "2026-04-18T01:36:57.027Z",
+      "viewCount": 0,
+      "downloadCount": 0
+    },
+    {
+      "id": "FZob0LMXE4o",
+      "title": "Test Document E2E",
+      "description": "",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [],
+      "fileUrl": "/uploads/e2e-test-file.pdf",
+      "fileName": "e2e-test-file.pdf",
+      "fileType": "pdf",
+      "fileSize": 25,
+      "status": "draft",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/e2e-test-file.pdf",
+          "uploadedBy": "2",
+          "uploadedAt": "2026-04-18T01:37:11.059Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-04-18T01:37:11.059Z",
+      "updatedAt": "2026-04-18T01:37:11.059Z",
+      "viewCount": 0,
+      "downloadCount": 0
+    },
+    {
+      "id": "d3CE3biJKQc",
+      "title": "Test Document E2E",
+      "description": "",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [],
+      "fileUrl": "/uploads/e2e-test-file.pdf",
+      "fileName": "e2e-test-file.pdf",
+      "fileType": "pdf",
+      "fileSize": 25,
+      "status": "draft",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/e2e-test-file.pdf",
+          "uploadedBy": "2",
+          "uploadedAt": "2026-04-18T01:37:23.581Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-04-18T01:37:23.582Z",
+      "updatedAt": "2026-04-18T01:37:23.582Z",
+      "viewCount": 0,
+      "downloadCount": 0
+    },
+    {
+      "id": "HdSjsRO06gc",
+      "title": "Test Document E2E",
+      "description": "This is a test document created by E2E tests",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [],
+      "fileUrl": "/uploads/e2e-test-file.pdf",
+      "fileName": "e2e-test-file.pdf",
+      "fileType": "pdf",
+      "fileSize": 25,
+      "status": "draft",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/e2e-test-file.pdf",
+          "uploadedBy": "2",
+          "uploadedAt": "2026-04-18T01:37:34.315Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-04-18T01:37:34.315Z",
+      "updatedAt": "2026-04-18T01:37:34.315Z",
+      "viewCount": 0,
+      "downloadCount": 0
+    },
+    {
+      "id": "TgSkM4sRhzc",
+      "title": "Test Document E2E",
+      "description": "This is a test document created by E2E tests",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [],
+      "fileUrl": "/uploads/e2e-test-file.pdf",
+      "fileName": "e2e-test-file.pdf",
+      "fileType": "pdf",
+      "fileSize": 25,
+      "status": "draft",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/e2e-test-file.pdf",
+          "uploadedBy": "2",
+          "uploadedAt": "2026-04-18T01:37:47.249Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-04-18T01:37:47.249Z",
+      "updatedAt": "2026-04-18T01:37:47.249Z",
+      "viewCount": 0,
+      "downloadCount": 0
+    },
+    {
+      "id": "V7uClFlM2Zs",
+      "title": "Test Document E2E",
+      "description": "",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [],
+      "fileUrl": "/uploads/e2e-test-file.pdf",
+      "fileName": "e2e-test-file.pdf",
+      "fileType": "pdf",
+      "fileSize": 25,
+      "status": "draft",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/e2e-test-file.pdf",
+          "uploadedBy": "2",
+          "uploadedAt": "2026-04-18T01:38:01.273Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-04-18T01:38:01.273Z",
+      "updatedAt": "2026-04-18T01:38:01.273Z",
+      "viewCount": 0,
+      "downloadCount": 0
+    },
+    {
+      "id": "-buHXO_CUzA",
+      "title": "Test Document E2E",
+      "description": "",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [],
+      "fileUrl": "/uploads/e2e-test-file.pdf",
+      "fileName": "e2e-test-file.pdf",
+      "fileType": "pdf",
+      "fileSize": 25,
+      "status": "draft",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/e2e-test-file.pdf",
+          "uploadedBy": "2",
+          "uploadedAt": "2026-04-18T01:38:12.329Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-04-18T01:38:12.329Z",
+      "updatedAt": "2026-04-18T01:38:12.329Z",
+      "viewCount": 0,
+      "downloadCount": 0
+    },
+    {
+      "id": "GbAeVjY6mTI",
+      "title": "Test Document E2E",
+      "description": "This is a test document created by E2E tests",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [],
+      "fileUrl": "/uploads/e2e-test-file.pdf",
+      "fileName": "e2e-test-file.pdf",
+      "fileType": "pdf",
+      "fileSize": 25,
+      "status": "draft",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/e2e-test-file.pdf",
+          "uploadedBy": "2",
+          "uploadedAt": "2026-04-18T01:39:12.696Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-04-18T01:39:12.696Z",
+      "updatedAt": "2026-04-18T01:39:12.696Z",
+      "viewCount": 0,
+      "downloadCount": 0
+    },
+    {
+      "id": "i83mryROh8Y",
+      "title": "Test Document E2E",
+      "description": "This is a test document created by E2E tests",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [],
+      "fileUrl": "/uploads/e2e-test-file.pdf",
+      "fileName": "e2e-test-file.pdf",
+      "fileType": "pdf",
+      "fileSize": 25,
+      "status": "draft",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/e2e-test-file.pdf",
+          "uploadedBy": "2",
+          "uploadedAt": "2026-04-18T01:39:25.029Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-04-18T01:39:25.029Z",
+      "updatedAt": "2026-04-18T01:39:25.029Z",
+      "viewCount": 0,
+      "downloadCount": 0
+    },
+    {
+      "id": "9hF_PkZQpg0",
+      "title": "Test Document E2E",
+      "description": "",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [],
+      "fileUrl": "/uploads/e2e-test-file.pdf",
+      "fileName": "e2e-test-file.pdf",
+      "fileType": "pdf",
+      "fileSize": 25,
+      "status": "draft",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/e2e-test-file.pdf",
+          "uploadedBy": "2",
+          "uploadedAt": "2026-04-18T01:39:37.914Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-04-18T01:39:37.914Z",
+      "updatedAt": "2026-04-18T01:39:37.914Z",
+      "viewCount": 0,
+      "downloadCount": 0
+    },
+    {
+      "id": "GyFsAH6BTO8",
+      "title": "Test Document E2E",
+      "description": "",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [],
+      "fileUrl": "/uploads/e2e-test-file.pdf",
+      "fileName": "e2e-test-file.pdf",
+      "fileType": "pdf",
+      "fileSize": 25,
+      "status": "draft",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/e2e-test-file.pdf",
+          "uploadedBy": "2",
+          "uploadedAt": "2026-04-18T01:39:50.467Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-04-18T01:39:50.467Z",
+      "updatedAt": "2026-04-18T01:39:50.467Z",
+      "viewCount": 0,
+      "downloadCount": 0
+    },
+    {
+      "id": "LgJai313jBE",
+      "title": "Test Document E2E",
+      "description": "This is a test document created by E2E tests",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [],
+      "fileUrl": "/uploads/e2e-test-file.pdf",
+      "fileName": "e2e-test-file.pdf",
+      "fileType": "pdf",
+      "fileSize": 25,
+      "status": "draft",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/e2e-test-file.pdf",
+          "uploadedBy": "2",
+          "uploadedAt": "2026-04-18T02:19:32.012Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-04-18T02:19:32.012Z",
+      "updatedAt": "2026-04-18T02:19:32.012Z",
+      "viewCount": 0,
+      "downloadCount": 0
+    },
+    {
+      "id": "xDOPYvAUaI8",
+      "title": "Test Document E2E",
+      "description": "",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [],
+      "fileUrl": "/uploads/e2e-test-file.pdf",
+      "fileName": "e2e-test-file.pdf",
+      "fileType": "pdf",
+      "fileSize": 25,
+      "status": "draft",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/e2e-test-file.pdf",
+          "uploadedBy": "2",
+          "uploadedAt": "2026-04-18T02:19:57.179Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-04-18T02:19:57.179Z",
+      "updatedAt": "2026-04-18T02:19:57.179Z",
+      "viewCount": 0,
+      "downloadCount": 0
+    },
+    {
+      "id": "4m6UjmLvZ1Y",
+      "title": "Test Document E2E",
+      "description": "",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [],
+      "fileUrl": "/uploads/e2e-test-file.pdf",
+      "fileName": "e2e-test-file.pdf",
+      "fileType": "pdf",
+      "fileSize": 25,
+      "status": "draft",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/e2e-test-file.pdf",
+          "uploadedBy": "2",
+          "uploadedAt": "2026-04-18T02:20:10.085Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-04-18T02:20:10.086Z",
+      "updatedAt": "2026-04-18T02:20:10.086Z",
+      "viewCount": 0,
+      "downloadCount": 0
+    },
+    {
+      "id": "TUG9T7gfCZk",
+      "title": "Test Document E2E",
+      "description": "This is a test document created by E2E tests",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [],
+      "fileUrl": "/uploads/e2e-test-file.pdf",
+      "fileName": "e2e-test-file.pdf",
+      "fileType": "pdf",
+      "fileSize": 25,
+      "status": "draft",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/e2e-test-file.pdf",
+          "uploadedBy": "2",
+          "uploadedAt": "2026-04-18T02:24:51.824Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-04-18T02:24:51.824Z",
+      "updatedAt": "2026-04-18T02:24:51.824Z",
+      "viewCount": 0,
+      "downloadCount": 0
+    },
+    {
+      "id": "vT3UWtjbhA8",
+      "title": "Test Document E2E",
+      "description": "This is a test document created by E2E tests",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [],
+      "fileUrl": "/uploads/e2e-test-file.pdf",
+      "fileName": "e2e-test-file.pdf",
+      "fileType": "pdf",
+      "fileSize": 25,
+      "status": "draft",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/e2e-test-file.pdf",
+          "uploadedBy": "2",
+          "uploadedAt": "2026-04-18T02:25:04.440Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-04-18T02:25:04.440Z",
+      "updatedAt": "2026-04-18T02:25:04.440Z",
+      "viewCount": 0,
+      "downloadCount": 0
+    },
+    {
+      "id": "j4u0gXIa7NY",
+      "title": "Test Document E2E",
+      "description": "",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [],
+      "fileUrl": "/uploads/e2e-test-file.pdf",
+      "fileName": "e2e-test-file.pdf",
+      "fileType": "pdf",
+      "fileSize": 25,
+      "status": "draft",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/e2e-test-file.pdf",
+          "uploadedBy": "2",
+          "uploadedAt": "2026-04-18T02:25:17.138Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-04-18T02:25:17.138Z",
+      "updatedAt": "2026-04-18T02:25:17.138Z",
+      "viewCount": 0,
+      "downloadCount": 0
+    },
+    {
+      "id": "WT9yjDpPyBE",
+      "title": "Test Document E2E",
+      "description": "",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [],
+      "fileUrl": "/uploads/e2e-test-file.pdf",
+      "fileName": "e2e-test-file.pdf",
+      "fileType": "pdf",
+      "fileSize": 25,
+      "status": "draft",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/e2e-test-file.pdf",
+          "uploadedBy": "2",
+          "uploadedAt": "2026-04-18T02:25:28.262Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-04-18T02:25:28.263Z",
+      "updatedAt": "2026-04-18T02:25:28.263Z",
+      "viewCount": 0,
+      "downloadCount": 0
+    },
+    {
+      "id": "2im5UXnWl9w",
+      "title": "Test Document E2E",
+      "description": "This is a test document created by E2E tests",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [],
+      "fileUrl": "/uploads/e2e-test-file.pdf",
+      "fileName": "e2e-test-file.pdf",
+      "fileType": "pdf",
+      "fileSize": 25,
+      "status": "draft",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/e2e-test-file.pdf",
+          "uploadedBy": "2",
+          "uploadedAt": "2026-04-18T02:25:39.568Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-04-18T02:25:39.568Z",
+      "updatedAt": "2026-04-18T02:25:39.568Z",
+      "viewCount": 0,
+      "downloadCount": 0
+    },
+    {
+      "id": "LGCegw88TpM",
+      "title": "Test Document E2E",
+      "description": "This is a test document created by E2E tests",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [],
+      "fileUrl": "/uploads/e2e-test-file.pdf",
+      "fileName": "e2e-test-file.pdf",
+      "fileType": "pdf",
+      "fileSize": 25,
+      "status": "draft",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/e2e-test-file.pdf",
+          "uploadedBy": "2",
+          "uploadedAt": "2026-04-18T02:25:51.200Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-04-18T02:25:51.200Z",
+      "updatedAt": "2026-04-18T02:25:51.200Z",
+      "viewCount": 0,
+      "downloadCount": 0
+    },
+    {
+      "id": "3pqQ_Lynbq4",
+      "title": "Test Document E2E",
+      "description": "",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [],
+      "fileUrl": "/uploads/e2e-test-file.pdf",
+      "fileName": "e2e-test-file.pdf",
+      "fileType": "pdf",
+      "fileSize": 25,
+      "status": "draft",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/e2e-test-file.pdf",
+          "uploadedBy": "2",
+          "uploadedAt": "2026-04-18T02:26:03.998Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-04-18T02:26:03.999Z",
+      "updatedAt": "2026-04-18T02:26:03.999Z",
+      "viewCount": 0,
+      "downloadCount": 0
+    },
+    {
+      "id": "D5rZ1s8FunU",
+      "title": "Test Document E2E",
+      "description": "",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [],
+      "fileUrl": "/uploads/e2e-test-file.pdf",
+      "fileName": "e2e-test-file.pdf",
+      "fileType": "pdf",
+      "fileSize": 25,
+      "status": "draft",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/e2e-test-file.pdf",
+          "uploadedBy": "2",
+          "uploadedAt": "2026-04-18T02:26:15.650Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-04-18T02:26:15.650Z",
+      "updatedAt": "2026-04-18T02:26:15.650Z",
+      "viewCount": 0,
+      "downloadCount": 0
+    },
+    {
+      "id": "4IRY9hmLKjw",
+      "title": "Test Document E2E",
+      "description": "This is a test document created by E2E tests",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [],
+      "fileUrl": "/uploads/e2e-test-file.pdf",
+      "fileName": "e2e-test-file.pdf",
+      "fileType": "pdf",
+      "fileSize": 25,
+      "status": "draft",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/e2e-test-file.pdf",
+          "uploadedBy": "2",
+          "uploadedAt": "2026-04-18T02:27:29.574Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-04-18T02:27:29.574Z",
+      "updatedAt": "2026-04-18T02:27:29.574Z",
+      "viewCount": 0,
+      "downloadCount": 0
+    },
+    {
+      "id": "0RgAq-T5wSQ",
+      "title": "Test Document E2E",
+      "description": "This is a test document created by E2E tests",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [],
+      "fileUrl": "/uploads/e2e-test-file.pdf",
+      "fileName": "e2e-test-file.pdf",
+      "fileType": "pdf",
+      "fileSize": 25,
+      "status": "draft",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/e2e-test-file.pdf",
+          "uploadedBy": "2",
+          "uploadedAt": "2026-04-18T02:27:42.091Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-04-18T02:27:42.091Z",
+      "updatedAt": "2026-04-18T02:27:42.091Z",
+      "viewCount": 0,
+      "downloadCount": 0
+    },
+    {
+      "id": "hd_1Ru42M_I",
+      "title": "Test Document E2E",
+      "description": "This is a test document created by E2E tests",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [],
+      "fileUrl": "/uploads/e2e-test-file.pdf",
+      "fileName": "e2e-test-file.pdf",
+      "fileType": "pdf",
+      "fileSize": 25,
+      "status": "draft",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/e2e-test-file.pdf",
+          "uploadedBy": "2",
+          "uploadedAt": "2026-04-18T02:28:07.751Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-04-18T02:28:07.752Z",
+      "updatedAt": "2026-04-18T02:28:07.752Z",
+      "viewCount": 0,
+      "downloadCount": 0
+    },
+    {
+      "id": "A7zCSTS3INU",
+      "title": "Test Document E2E",
+      "description": "This is a test document created by E2E tests",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [],
+      "fileUrl": "/uploads/e2e-test-file.pdf",
+      "fileName": "e2e-test-file.pdf",
+      "fileType": "pdf",
+      "fileSize": 25,
+      "status": "draft",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/e2e-test-file.pdf",
+          "uploadedBy": "2",
+          "uploadedAt": "2026-04-18T02:28:19.792Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-04-18T02:28:19.793Z",
+      "updatedAt": "2026-04-18T02:28:19.793Z",
+      "viewCount": 0,
+      "downloadCount": 0
+    },
+    {
+      "id": "itvu7lJmcns",
+      "title": "Test Document E2E",
+      "description": "This is a test document created by E2E tests",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [],
+      "fileUrl": "/uploads/e2e-test-file.pdf",
+      "fileName": "e2e-test-file.pdf",
+      "fileType": "pdf",
+      "fileSize": 25,
+      "status": "draft",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/e2e-test-file.pdf",
+          "uploadedBy": "2",
+          "uploadedAt": "2026-04-18T02:28:32.738Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-04-18T02:28:32.739Z",
+      "updatedAt": "2026-04-18T02:28:32.739Z",
+      "viewCount": 0,
+      "downloadCount": 0
+    },
+    {
+      "id": "nlbTZO52GHw",
+      "title": "Test Document E2E",
+      "description": "This is a test document created by E2E tests",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [],
+      "fileUrl": "/uploads/e2e-test-file.pdf",
+      "fileName": "e2e-test-file.pdf",
+      "fileType": "pdf",
+      "fileSize": 25,
+      "status": "draft",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/e2e-test-file.pdf",
+          "uploadedBy": "2",
+          "uploadedAt": "2026-04-18T02:28:44.809Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-04-18T02:28:44.809Z",
+      "updatedAt": "2026-04-18T02:28:44.809Z",
+      "viewCount": 1,
+      "downloadCount": 0
+    },
+    {
+      "id": "acFis11FSEU",
+      "title": "Test Document E2E",
+      "description": "This is a test document created by E2E tests",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [],
+      "fileUrl": "/uploads/e2e-test-file.pdf",
+      "fileName": "e2e-test-file.pdf",
+      "fileType": "pdf",
+      "fileSize": 25,
+      "status": "draft",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/e2e-test-file.pdf",
+          "uploadedBy": "2",
+          "uploadedAt": "2026-04-18T02:30:06.934Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-04-18T02:30:06.934Z",
+      "updatedAt": "2026-04-18T02:30:06.934Z",
+      "viewCount": 0,
+      "downloadCount": 0
+    },
+    {
+      "id": "njjTQNTjovc",
+      "title": "Test Document E2E",
+      "description": "This is a test document created by E2E tests",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [],
+      "fileUrl": "/uploads/e2e-test-file.pdf",
+      "fileName": "e2e-test-file.pdf",
+      "fileType": "pdf",
+      "fileSize": 25,
+      "status": "draft",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/e2e-test-file.pdf",
+          "uploadedBy": "2",
+          "uploadedAt": "2026-04-18T02:30:24.285Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-04-18T02:30:24.287Z",
+      "updatedAt": "2026-04-18T02:30:24.287Z",
+      "viewCount": 0,
+      "downloadCount": 0
+    },
+    {
+      "id": "Y9aF1d8ftp4",
+      "title": "Test Document E2E",
+      "description": "",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [],
+      "fileUrl": "/uploads/e2e-test-file.pdf",
+      "fileName": "e2e-test-file.pdf",
+      "fileType": "pdf",
+      "fileSize": 25,
+      "status": "draft",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/e2e-test-file.pdf",
+          "uploadedBy": "2",
+          "uploadedAt": "2026-04-18T02:30:43.040Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-04-18T02:30:43.040Z",
+      "updatedAt": "2026-04-18T02:30:43.040Z",
+      "viewCount": 59,
+      "downloadCount": 0
+    },
+    {
+      "id": "nMOzQy-UjjY",
+      "title": "Test Document E2E",
+      "description": "",
+      "categoryId": "1",
+      "departmentId": "1",
+      "tags": [],
+      "fileUrl": "/uploads/e2e-test-file.pdf",
+      "fileName": "e2e-test-file.pdf",
+      "fileType": "pdf",
+      "fileSize": 25,
+      "status": "draft",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/e2e-test-file.pdf",
+          "uploadedBy": "2",
+          "uploadedAt": "2026-04-18T02:30:59.915Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-04-18T02:30:59.915Z",
+      "updatedAt": "2026-04-18T02:30:59.915Z",
+      "viewCount": 15,
+      "downloadCount": 0
+    },
+    {
+      "id": "Xb09KjNNq08",
+      "title": "Q3 Financial Report 2024",
+      "description": "Quarterly financial performance report covering revenue, expenses, and projections for Q3 2024.",
+      "categoryId": "5",
+      "departmentId": "1",
+      "tags": [
+        "finance",
+        "q3",
+        "report"
+      ],
+      "fileUrl": "/uploads/Q3_Financial_Report.pdf",
+      "fileName": "Q3_Financial_Report.pdf",
+      "fileType": "pdf",
+      "fileSize": 13,
+      "status": "published",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/Q3_Financial_Report.pdf",
+          "uploadedBy": "2",
+          "uploadedAt": "2026-04-18T20:09:05.520Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-04-18T20:09:05.520Z",
+      "updatedAt": "2026-04-18T20:09:05.520Z",
+      "viewCount": 0,
+      "downloadCount": 0
+    },
+    {
+      "id": "Stv-YRlYuHE",
+      "title": "LAB_8_DATA_FOR_BACKENDS",
+      "description": "kvlxkmds",
+      "categoryId": "2",
+      "departmentId": "1",
+      "tags": [],
+      "fileUrl": "/uploads/LAB_8_DATA_FOR_BACKENDS.pdf",
+      "fileName": "LAB_8_DATA_FOR_BACKENDS.pdf",
+      "fileType": "pdf",
+      "fileSize": 190873,
+      "status": "draft",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/LAB_8_DATA_FOR_BACKENDS.pdf",
+          "uploadedBy": "2",
+          "uploadedAt": "2026-04-21T09:44:54.377Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-04-21T09:44:54.377Z",
+      "updatedAt": "2026-04-21T09:44:54.377Z",
+      "viewCount": 13,
+      "downloadCount": 0
+    },
+    {
+      "id": "-p4B7aW4B8E",
+      "title": "Lab 3 Report (1)",
+      "description": "halimi the joat ",
+      "categoryId": "2",
+      "departmentId": "2",
+      "tags": [],
+      "fileUrl": "/uploads/Lab 3 Report (1).pdf",
+      "fileName": "Lab 3 Report (1).pdf",
+      "fileType": "pdf",
+      "fileSize": 122292,
+      "status": "published",
+      "uploadedBy": "2",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/Lab 3 Report (1).pdf",
+          "uploadedBy": "2",
+          "uploadedAt": "2026-04-21T10:10:46.444Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-04-21T10:10:46.444Z",
+      "updatedAt": "2026-04-21T10:10:46.444Z",
+      "viewCount": 101,
+      "downloadCount": 2
+    },
+    {
+      "id": "EBmbPkzYbEM",
+      "title": "IT Policy Document",
+      "description": "",
+      "categoryId": "rmFA1tLgP3A",
+      "departmentId": "hPyGgv-T_gs",
+      "tags": [],
+      "fileUrl": "/uploads/demo.pdf",
+      "fileName": "demo.pdf",
+      "fileType": "pdf",
+      "fileSize": 1024,
+      "status": "published",
+      "uploadedBy": "Fx5tT0VwFZE",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/demo.pdf",
+          "uploadedBy": "Fx5tT0VwFZE",
+          "uploadedAt": "2026-05-14T01:16:49.501Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-05-14T01:16:49.501Z",
+      "updatedAt": "2026-05-14T01:16:49.501Z",
+      "viewCount": 3,
+      "downloadCount": 1,
+      "translatedContentFr": "Document de politique informatique\n\nCe document définit les règles et procédures du département IT, couvrant la gestion des accès, la sécurité des données et les bonnes pratiques opérationnelles.",
+      "translatedContentAr": "وثيقة سياسة تكنولوجيا المعلومات\n\nتحدد هذه الوثيقة القواعد والإجراءات الخاصة بقسم تكنولوجيا المعلومات، وتشمل إدارة الوصول وأمن البيانات وأفضل الممارسات التشغيلية.",
+      "translatedContentEs": "Documento de política de TI\n\nEste documento define las reglas y procedimientos del departamento de TI, cubriendo la gestión de accesos, la seguridad de datos y las buenas prácticas operacionales."
+    },
+    {
+      "id": "K4w4Ugol3tM",
+      "title": "Finance Report Q1",
+      "description": "",
+      "categoryId": "aO1-tS2r5ys",
+      "departmentId": "oj8t1OUoeTk",
+      "tags": [],
+      "fileUrl": "/uploads/demo.pdf",
+      "fileName": "demo.pdf",
+      "fileType": "pdf",
+      "fileSize": 1024,
+      "status": "published",
+      "uploadedBy": "EgHsGn-FKXw",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "fileUrl": "/uploads/demo.pdf",
+          "uploadedBy": "EgHsGn-FKXw",
+          "uploadedAt": "2026-05-14T01:17:22.432Z",
+          "notes": "Initial upload"
+        }
+      ],
+      "createdAt": "2026-05-14T01:17:22.432Z",
+      "updatedAt": "2026-05-14T01:17:22.432Z",
+      "viewCount": 1,
+      "downloadCount": 1
+    }
+  ],
+  "comments": [
+    {
+      "documentId": "nMOzQy-UjjY",
+      "userId": "2",
+      "content": "fjg",
+      "parentId": null,
+      "createdAt": "2026-04-18T03:00:46.500Z",
+      "isEdited": false,
+      "id": "R3RQNziiztk"
+    },
+    {
+      "documentId": "Stv-YRlYuHE",
+      "userId": "2",
+      "content": "anis says hi",
+      "parentId": null,
+      "createdAt": "2026-04-21T09:45:19.570Z",
+      "isEdited": false,
+      "id": "yHcqkUqepos"
+    },
+    {
+      "documentId": "1",
+      "userId": "2",
+      "content": "E2E proof comment — added at 2026-05-02T12:44:02.394Z",
+      "parentId": null,
+      "createdAt": "2026-05-02T12:44:02.514Z",
+      "isEdited": false,
+      "id": "N46msamW3gc"
+    },
+    {
+      "documentId": "1",
+      "userId": "2",
+      "content": "E2E proof comment — added at 2026-05-02T12:44:16.836Z",
+      "parentId": null,
+      "createdAt": "2026-05-02T12:44:16.989Z",
+      "isEdited": false,
+      "id": "lFUpUSklvNE"
+    },
+    {
+      "documentId": "1",
+      "userId": "2",
+      "content": "E2E proof comment — added at 2026-05-02T12:48:52.754Z",
+      "parentId": null,
+      "createdAt": "2026-05-02T12:48:52.849Z",
+      "isEdited": false,
+      "id": "XttSdNitRKY"
+    },
+    {
+      "documentId": "1",
+      "userId": "2",
+      "content": "E2E proof comment — added at 2026-05-02T12:50:05.982Z",
+      "parentId": null,
+      "createdAt": "2026-05-02T12:50:06.071Z",
+      "isEdited": false,
+      "id": "X3_-VB1cMr0"
+    },
+    {
+      "documentId": null,
+      "userId": null,
+      "content": "This IT policy document is essential for onboarding new team members. Please review it carefully.",
+      "parentId": null,
+      "createdAt": "2026-05-14T00:29:18.511Z",
+      "isEdited": false,
+      "id": "GZqU78zt-BI"
+    },
+    {
+      "documentId": null,
+      "userId": null,
+      "content": "This IT policy document is essential for onboarding new team members. Please review it carefully.",
+      "parentId": null,
+      "createdAt": "2026-05-14T00:32:40.702Z",
+      "isEdited": false,
+      "id": "O9SVaLArYBk"
+    },
+    {
+      "documentId": null,
+      "userId": null,
+      "content": "This IT policy document is essential for onboarding new team members. Please review it carefully.",
+      "parentId": null,
+      "createdAt": "2026-05-14T00:42:05.448Z",
+      "isEdited": false,
+      "id": "4Qp_-r-u8v0"
+    },
+    {
+      "documentId": null,
+      "userId": null,
+      "content": "This IT policy document is essential for onboarding new team members. Please review it carefully.",
+      "parentId": null,
+      "createdAt": "2026-05-14T00:56:17.680Z",
+      "isEdited": false,
+      "id": "0V4K9CqFvpg"
+    },
+    {
+      "documentId": null,
+      "userId": null,
+      "content": "This IT policy document is essential for onboarding new team members. Please review it carefully.",
+      "parentId": null,
+      "createdAt": "2026-05-14T00:59:42.471Z",
+      "isEdited": false,
+      "id": "v1sv_-sxocw"
+    },
+    {
+      "documentId": "EBmbPkzYbEM",
+      "userId": "Fx5tT0VwFZE",
+      "content": "This IT policy document is essential for onboarding new team members. Please review it carefully.",
+      "parentId": null,
+      "createdAt": "2026-05-14T01:17:05.222Z",
+      "isEdited": false,
+      "id": "Ti6NJ8MHErM"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

@@ -1,0 +1,21 @@
+<odoo>
+	
+	    <record model="ir.module.category" id="module_module_skeleton">
+            <field name="name">Module Skeleton</field>
+            <field name="description">Module Skeleton</field>
+            <field name="sequence">1</field>
+        </record>
+
+		<record id="group_skeleton_user" model="res.groups">
+			<field name="name">User</field>
+			<field name="category_id" ref="module_skeleton.module_module_skeleton"/>			
+			<field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>	
+		</record>
+
+		<record id="group_skeleton_manager" model="res.groups">
+			<field name="name">Manager</field>
+			<field name="category_id" ref="module_skeleton.module_module_skeleton"/>			
+			<field name="implied_ids" eval="[(4, ref('module_skeleton.group_skeleton_user'))]"/>	
+			<field name="users" eval="[(4, ref('base.user_root'))]"/>
+		</record>
+</odoo>

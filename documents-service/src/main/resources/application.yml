@@ -1,0 +1,50 @@
+server:
+  port: 8082
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/dms
+    username: admin
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
+  redis:
+    host: localhost
+    port: 6379
+  cache:
+    type: redis
+    redis:
+      time-to-live: 60000
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      acks: all
+      retries: 3
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      auto-offset-reset: earliest
+      properties:
+        spring.json.trusted.packages: "*"
+        spring.json.use.type.headers: false
+        spring.json.value.default.type: com.example.documents.events.DocumentTranslatedEvent
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration
+
+app:
+  kafka:
+    topic:
+      documents-uploaded: dms.documents.uploaded
+  jwt:
+    secret: dms-super-secret-jwt-signing-key-at-least-32-bytes
+
+aws:
+  s3:
+    endpoint: http://localhost:9000
+    access-key: admin
+    secret-key: password
+    bucket-name: dms-bucket
+    region: us-east-1

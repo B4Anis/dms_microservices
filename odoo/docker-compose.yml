@@ -1,0 +1,41 @@
+services:
+  db:
+    image: postgres:13
+    container_name: odoo15-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-postgres}
+      POSTGRES_USER: ${POSTGRES_USER:-odoo}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-odoo}
+    volumes:
+      - odoo15-db-data:/var/lib/postgresql/data
+
+  odoo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: odoo:15.0-custom
+    container_name: odoo15
+    restart: unless-stopped
+    depends_on:
+      - db
+    ports:
+      - "0.0.0.0:8015:8069"
+    environment:
+      HOST: db
+      PORT: 5432
+      USER: ${POSTGRES_USER:-odoo}
+      PASSWORD: ${POSTGRES_PASSWORD:-odoo}
+    volumes:
+      - odoo15-web-data:/var/lib/odoo
+      - ./addons:/mnt/extra-addons
+      - ./config/odoo.conf:/etc/odoo/odoo.conf:ro
+      - ./logs:/var/log/odoo
+    command: >
+      odoo
+      --config=/etc/odoo/odoo.conf
+      --addons-path=${ODOO_ADDONS_PATH:-/usr/lib/python3/dist-packages/odoo/addons,/mnt/extra-addons}
+
+volumes:
+  odoo15-web-data:
+  odoo15-db-data:

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ENSIA DMS — System Architecture</title>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <style>
+    :root {
+      --bg:      #0b1120;
+      --surface: #131f35;
+      --card:    #1a2740;
+      --border:  #243352;
+      --text:    #e2e8f0;
+      --muted:   #7c8fa8;
+      --blue:    #3b82f6;
+      --orange:  #f97316;
+      --gray:    #64748b;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      padding: 2.5rem 2rem 4rem;
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    header { margin-bottom: 2rem; }
+
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      background: linear-gradient(90deg, #60a5fa, #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    header p {
+      margin-top: 0.35rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    /* ── Legend ── */
+    .legend {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      padding: 0.9rem 1.4rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.82rem;
+      color: var(--text);
+    }
+
+    .ll { width: 44px; height: 3px; border-radius: 2px; flex-shrink: 0; }
+    .ll-sync  { background: var(--blue); }
+    .ll-async { background: var(--orange); }
+    .ll-oob   { background: repeating-linear-gradient(90deg, var(--gray) 0, var(--gray) 5px, transparent 5px, transparent 10px); }
+
+    /* ── Diagram card ── */
+    .diagram-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 0.9rem;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      overflow-x: auto;
+    }
+
+    .mermaid { min-width: 860px; }
+
+    /* ── Tables grid ── */
+    .tables-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (max-width: 820px) { .tables-grid { grid-template-columns: 1fr; } }
+
+    .tbl-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      overflow: hidden;
+    }
+
+    .tbl-card h2 {
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--muted);
+      padding: 0.75rem 1.1rem;
+      border-bottom: 1px solid var(--border);
+      background: rgba(255,255,255,0.03);
+    }
+
+    table { width: 100%; border-collapse: collapse; }
+
+    thead th {
+      padding: 0.45rem 1.1rem;
+      text-align: left;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      background: rgba(255,255,255,0.02);
+    }
+
+    tbody tr { border-top: 1px solid var(--border); transition: background 0.1s; }
+    tbody tr:hover { background: rgba(255,255,255,0.03); }
+
+    td { padding: 0.5rem 1.1rem; font-size: 0.82rem; }
+
+    .badge {
+      display: inline-block;
+      padding: 0.15rem 0.55rem;
+      border-radius: 9999px;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+    }
+
+    .b-sync  { background: rgba(59,130,246,0.18); color: #93c5fd; }
+    .b-async { background: rgba(249,115,22,0.18);  color: #fdba74; }
+    .b-oob   { background: rgba(100,116,139,0.18); color: #94a3b8; }
+
+    code {
+      font-family: 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+      font-size: 0.78em;
+      background: rgba(255,255,255,0.08);
+      padding: 0.1rem 0.38rem;
+      border-radius: 0.3rem;
+      color: #bae6fd;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ENSIA DMS — System Architecture</h1>
+    <p>Full-stack Document Management System &nbsp;·&nbsp; Microservices &nbsp;·&nbsp; Event-driven &nbsp;·&nbsp; 4th-Year Enterprise Computing Lab</p>
+  </header>
+
+  <!-- Legend -->
+  <div class="legend">
+    <div class="legend-item"><div class="ll ll-sync"></div> Synchronous &mdash; HTTP / REST</div>
+    <div class="legend-item"><div class="ll ll-async"></div> Asynchronous &mdash; Kafka event</div>
+    <div class="legend-item"><div class="ll ll-oob"></div> Out-of-band &mdash; metrics scrape</div>
+  </div>
+
+  <!-- Diagram -->
+  <div class="diagram-card">
+    <div class="mermaid">
+%%{init: {
+  "theme": "base",
+  "themeVariables": {
+    "background":        "#131f35",
+    "primaryColor":      "#1e3a8a",
+    "primaryTextColor":  "#f1f5f9",
+    "primaryBorderColor":"#3b82f6",
+    "lineColor":         "#60a5fa",
+    "secondaryColor":    "#1e3a5f",
+    "tertiaryColor":     "#0b1120",
+    "edgeLabelBackground":"#1a2740",
+    "clusterBkg":        "#0d1a2e",
+    "clusterBorder":     "#243352",
+    "titleColor":        "#e2e8f0",
+    "fontFamily":        "Segoe UI, system-ui, sans-serif",
+    "fontSize":          "13px"
+  },
+  "flowchart": { "curve": "basis", "padding": 28, "nodeSpacing": 50, "rankSpacing": 60 }
+}}%%
+flowchart TD
+
+  subgraph CLIENTS[" CLIENTS "]
+    Browser["🖥  React SPA\nport :8080 via gateway"]
+    OdooUI["🖥  Odoo 15 Web UI\nport :8015"]
+  end
+
+  GW["⚙  API Gateway\nport :8080\nJWT validation · Route rewriting"]
+
+  subgraph CORE[" CORE SERVICES "]
+    AUTH["🔐  Auth Service\nSpring Boot  ·  port :8083\nJWT issue / verify · User CRUD"]
+    DOCS["📄  Documents Service\nSpring Boot  ·  port :8082\nUpload · Versioning · Search"]
+    COMMENTS["💬  Comments Service\nSpring Boot  ·  port :8081\nPost · Fetch per document"]
+  end
+
+  subgraph DATA[" DATA STORES "]
+    PG[("🐘  PostgreSQL 15\nport :5433\ntables: users · documents")]
+    REDIS[("⚡  Redis 7\nport :6379\nread cache · TTL 60 s")]
+    MINIO[("🪣  MinIO\nAPI :9000  ·  Console :9001\nbucket: dms-bucket")]
+    CASSANDRA[("🗃  Cassandra 4.1\nport :9042\nkeyspace: dms · comments")]
+  end
+
+  subgraph ASYNC_LAYER[" ASYNC LAYER "]
+    KAFKA[["📨  Apache Kafka\nport :9092  ·  KRaft mode\ntopics:\ndms.documents.uploaded\ndms.documents.translated"]]
+    TRANSLATOR["🌐  Translator Service\nPython · Gemini API\ntranslates to FR · AR · ES"]
+    KUI["🔍  Kafka UI\nport :8082\nbrowser topic inspector"]
+  end
+
+  subgraph ODOO_STACK[" ODOO ERP  (separate docker-compose stack) "]
+    ODOO["📦  Odoo 15\nensia_dms module\nport :8015"]
+    ODOO_DB[("🐘  PostgreSQL 13\nodoo schema\ninternal — no host port")]
+  end
+
+  subgraph OBS[" OBSERVABILITY "]
+    PGEXP["📡  postgres-exporter\nport :9187"]
+    PROM["📊  Prometheus\nport :9090"]
+    GRAFANA["📈  Grafana\nport :3000  ·  admin/admin"]
+  end
+
+  %% ── Synchronous (solid blue ──►) ──────────────────────────
+  Browser   -->|"HTTPS"| GW
+  OdooUI    -->|"HTTP"| ODOO
+  GW        -->|"HTTP"| AUTH
+  GW        -->|"HTTP"| DOCS
+  GW        -->|"HTTP"| COMMENTS
+  AUTH      -->|"R / W"| PG
+  DOCS      -->|"R / W"| PG
+  DOCS     <-->|"cache reads"| REDIS
+  DOCS      -->|"store / fetch binary"| MINIO
+  COMMENTS  -->|"R / W"| CASSANDRA
+  ODOO      -->|"R / W"| ODOO_DB
+  TRANSLATOR-->|"fetch source file"| MINIO
+
+  %% ── Asynchronous (thick orange ═══►) ──────────────────────
+  DOCS        ==>|"publish:\ndms.documents.uploaded"| KAFKA
+  KAFKA       ==>|"consume"| TRANSLATOR
+  TRANSLATOR  ==>|"publish:\ndms.documents.translated"| KAFKA
+  KAFKA       ==>|"consume → update PG\ntranslated_content_*"| DOCS
+
+  %% ── Out-of-band (dotted ···►) ──────────────────────────────
+  KUI     -.->|"inspect topics"| KAFKA
+  PGEXP   -.->|"pg metrics"| PG
+  PROM    -.->|"scrape"| PGEXP
+  GRAFANA -.->|"query"| PROM
+
+  %% ── Node colour classes ─────────────────────────────────────
+  classDef client  fill:#1e3a8a,stroke:#60a5fa,color:#f1f5f9
+  classDef gateway fill:#4c1d95,stroke:#a78bfa,color:#f1f5f9
+  classDef service fill:#14532d,stroke:#4ade80,color:#f1f5f9
+  classDef db      fill:#7c2d12,stroke:#fb923c,color:#f1f5f9
+  classDef queue   fill:#713f12,stroke:#fbbf24,color:#f1f5f9
+  classDef async   fill:#1c2a3a,stroke:#7c8fa8,color:#f1f5f9
+  classDef obs     fill:#1e1b4b,stroke:#818cf8,color:#f1f5f9
+  classDef odoo    fill:#064e3b,stroke:#34d399,color:#f1f5f9
+
+  class Browser,OdooUI client
+  class GW gateway
+  class AUTH,DOCS,COMMENTS service
+  class PG,REDIS,MINIO,CASSANDRA,ODOO_DB db
+  class KAFKA queue
+  class TRANSLATOR,KUI async
+  class PGEXP,PROM,GRAFANA obs
+  class ODOO odoo
+    </div>
+  </div>
+
+  <!-- Tables -->
+  <div class="tables-grid">
+
+    <div class="tbl-card">
+      <h2>Flow Summary</h2>
+      <table>
+        <thead><tr><th>Flow</th><th>Type</th><th>Path (abbreviated)</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>Login / JWT issue</td>
+            <td><span class="badge b-sync">Sync</span></td>
+            <td>Browser → GW → Auth → PG</td>
+          </tr>
+          <tr>
+            <td>Document upload</td>
+            <td><span class="badge b-sync">Sync</span></td>
+            <td>Browser → GW → Documents → PG + MinIO</td>
+          </tr>
+          <tr>
+            <td>Document read (cache hit)</td>
+            <td><span class="badge b-sync">Sync</span></td>
+            <td>Browser → GW → Documents → Redis</td>
+          </tr>
+          <tr>
+            <td>Document read (cold)</td>
+            <td><span class="badge b-sync">Sync</span></td>
+            <td>Browser → GW → Documents → Redis miss → PG</td>
+          </tr>
+          <tr>
+            <td>Comment post / fetch</td>
+            <td><span class="badge b-sync">Sync</span></td>
+            <td>Browser → GW → Comments → Cassandra</td>
+          </tr>
+          <tr>
+            <td>Translation trigger</td>
+            <td><span class="badge b-async">Async</span></td>
+            <td>Documents ══► Kafka <code>dms.documents.uploaded</code></td>
+          </tr>
+          <tr>
+            <td>Translation execution</td>
+            <td><span class="badge b-async">Async</span></td>
+            <td>Kafka ══► Translator → MinIO + Gemini API</td>
+          </tr>
+          <tr>
+            <td>Translation persistence</td>
+            <td><span class="badge b-async">Async</span></td>
+            <td>Translator ══► Kafka <code>dms.documents.translated</code> ══► Documents → PG</td>
+          </tr>
+          <tr>
+            <td>ERP document management</td>
+            <td><span class="badge b-sync">Sync</span></td>
+            <td>Odoo UI → Odoo 15 (<code>ensia_dms</code>) → PG (odoo schema)</td>
+          </tr>
+          <tr>
+            <td>Metrics collection</td>
+            <td><span class="badge b-oob">Out-of-band</span></td>
+            <td>Prometheus → postgres-exporter → PG → Grafana</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tbl-card">
+      <h2>Port Reference</h2>
+      <table>
+        <thead><tr><th>Service</th><th>Host Port(s)</th><th>Note</th></tr></thead>
+        <tbody>
+          <tr><td>API Gateway</td>      <td><code>8080</code></td>       <td>Single public entry point</td></tr>
+          <tr><td>Auth Service</td>     <td><code>8083</code></td>       <td>Also internal to GW</td></tr>
+          <tr><td>Documents Service</td><td><code>8082</code></td>       <td>Internal only</td></tr>
+          <tr><td>Comments Service</td> <td><code>8081</code></td>       <td>Internal only</td></tr>
+          <tr><td>Odoo 15</td>          <td><code>8015</code></td>       <td>Separate compose stack</td></tr>
+          <tr><td>Kafka</td>            <td><code>9092</code> / <code>29092</code></td><td>External / internal broker</td></tr>
+          <tr><td>Kafka UI</td>         <td><code>8082</code></td>       <td>Dev tool</td></tr>
+          <tr><td>MinIO API</td>        <td><code>9000</code></td>       <td>S3-compatible</td></tr>
+          <tr><td>MinIO Console</td>    <td><code>9001</code></td>       <td>Web UI</td></tr>
+          <tr><td>PostgreSQL (DMS)</td> <td><code>5433</code></td>       <td>Mapped from :5432</td></tr>
+          <tr><td>PostgreSQL (Odoo)</td><td>—</td>                       <td>Internal only</td></tr>
+          <tr><td>Redis</td>            <td><code>6379</code></td>       <td></td></tr>
+          <tr><td>Cassandra</td>        <td><code>9042</code></td>       <td></td></tr>
+          <tr><td>Prometheus</td>       <td><code>9090</code></td>       <td></td></tr>
+          <tr><td>Grafana</td>          <td><code>3000</code></td>       <td>admin / admin</td></tr>
+          <tr><td>postgres-exporter</td><td><code>9187</code></td>       <td></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      securityLevel: 'loose',
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- ======================================================
+             Security Groups
+        ====================================================== -->
+
+        <record id="group_dms_user" model="res.groups">
+            <field name="name">User</field>
+            <field name="category_id" ref="base.module_category_hidden"/>
+            <field name="comment">Can read categories/departments; create and edit own documents.</field>
+        </record>
+
+        <!-- Manager implies User so managers also hold User-level access rights -->
+        <record id="group_dms_manager" model="res.groups">
+            <field name="name">Manager</field>
+            <field name="category_id" ref="base.module_category_hidden"/>
+            <field name="implied_ids" eval="[(4, ref('ensia_dms.group_dms_user'))]"/>
+            <field name="comment">Full CRUD on all DMS models; can see all documents regardless of department.</field>
+        </record>
+
+        <!-- ======================================================
+             Record Rules – ensia.dms.document
+        ====================================================== -->
+
+        <!-- Rule 1: Managers see every document (unrestricted domain) -->
+        <record id="rule_dms_document_manager_all" model="ir.rule">
+            <field name="name">DMS Document: Manager sees all records</field>
+            <field name="model_id" ref="ensia_dms.model_ensia_dms_document"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+            <field name="groups" eval="[(4, ref('ensia_dms.group_dms_manager'))]"/>
+            <field name="perm_read"   eval="True"/>
+            <field name="perm_write"  eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+        </record>
+
+        <!-- Rule 2: Users see only documents whose departments include them -->
+        <record id="rule_dms_document_user_own_departments" model="ir.rule">
+            <field name="name">DMS Document: User sees documents of their departments</field>
+            <field name="model_id" ref="ensia_dms.model_ensia_dms_document"/>
+            <field name="domain_force">[('department_ids.user_ids', 'in', [user.id])]</field>
+            <field name="groups" eval="[(4, ref('ensia_dms.group_dms_user'))]"/>
+            <field name="perm_read"   eval="True"/>
+            <field name="perm_write"  eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="False"/>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: translator-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: translator-service
+  template:
+    metadata:
+      labels:
+        app: translator-service
+    spec:
+      containers:
+      - name: translator-service
+        image: antigravityec-translator-service:latest
+        imagePullPolicy: IfNotPresent
+        env:
+        - name: KAFKA_BROKER
+          value: "kafka:9092"
+        - name: GEMINI_API_KEY
+          value: "AIzaSyCa4T-kizepVZXhbCjSXTEpvWBvi43x5Sg"

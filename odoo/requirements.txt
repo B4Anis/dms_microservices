@@ -1,0 +1,10 @@
+boto3
+num2words
+qrcode
+httpagentparser
+xlwt
+setuptools-rust
+paramiko
+xlsxwriter
+xlrd==1.2.0
+email_reply_parser

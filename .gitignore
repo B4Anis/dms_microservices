@@ -1,0 +1,53 @@
+# Maven build output
+target/
+*.class
+*.jar
+*.war
+
+# Node / React
+node_modules/
+dist/
+.pnp
+.pnp.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+
+# Logs
+*.log
+*.log.*
+logs/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/settings.json
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# k6 binary (large binary tool)
+k6-v0.49.0-windows-amd64/
+
+# Playwright test results / reports
+playwright-report/
+test-results/
+
+# Odoo data volumes (runtime data)
+odoo/data/
